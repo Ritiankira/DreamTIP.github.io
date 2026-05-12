@@ -234,16 +234,14 @@
     </div>
   </div>
 
-<main id="main-content"> 
+<main id="main-content">
 <section class="hero">
   <div class="hero-body">
     <div class="container is-max-desktop">
       <div class="columns is-centered">
         <div class="column has-text-centered">
-          <!-- TODO: Replace with your paper title -->
-          <h1 class="title is-1 publication-title">DreamTIP: Enabling Efficient Policy Transfer for Quadruped Robots</h1>
+          <h1 class="title is-1 publication-title">DreamTIP: Learning Task-Invariant Properties via Dreamer for Efficient Policy Transfer in Quadruped Robots</h1>
           <div class="is-size-5 publication-authors">
-            <!-- TODO: Replace with your paper authors and their personal links -->
             <span class="author-block">
               Junyang Liang<sup>1</sup>,
             </span>
@@ -271,63 +269,61 @@
           </div>
 
           <div class="is-size-5 publication-authors">
-            <!-- TODO: Replace with your institution and conference/journal info -->
-            <span class="author-block">Shenzhen University<sup>1</sup>, Peng Cheng Laboratory<sup>2</sup><br>IEEE International Conference on Robotics and Automation (ICRA) 2026</span>
-            <!-- TODO: Remove this line if no equal contribution -->
+            <span class="author-block">Shenzhen University<sup>1</sup>, Peng Cheng Laboratory<sup>2</sup><br>Accepted by IEEE International Conference on Robotics and Automation (ICRA) 2026</span>
             <span class="eql-cntrb"><small><br><sup>*</sup>Corresponding Author: Changxin Huang (huangchx@szu.edu.cn)</small></span>
           </div>
 
           <div class="column has-text-centered">
             <div class="publication-links">
-              <!-- TODO: Update with your arXiv paper ID -->
+              <!-- arXiv PDF 链接 -->
               <span class="link-block">
-                <a href="https://arxiv.org/pdf/<ARXIV PAPER ID>.pdf" target="_blank"
-                class="external-link button is-normal is-rounded is-dark">
-                <span class="icon">
-                  <i class="fas fa-file-pdf"></i>
-                </span>
-                <span>Paper</span>
-              </a>
-            </span>
-
-            <!-- TODO: Add your supplementary material PDF or remove this section -->
-            <span class="link-block">
-              <a href="static/pdfs/supplementary_material.pdf" target="_blank"
-              class="external-link button is-normal is-rounded is-dark">
-              <span class="icon">
-                <i class="fas fa-file-pdf"></i>
+                <a href="https://arxiv.org/pdf/2604.02911.pdf" target="_blank"
+                  class="external-link button is-normal is-rounded is-dark">
+                  <span class="icon">
+                    <i class="fas fa-file-pdf"></i>
+                  </span>
+                  <span>Paper</span>
+                </a>
               </span>
-              <span>Supplementary</span>
-            </a>
-          </span>
 
-          <!-- TODO: Replace with your GitHub repository URL -->
-          <span class="link-block">
-            <a href="https://github.com/YOUR REPO HERE" target="_blank"
-            class="external-link button is-normal is-rounded is-dark">
-            <span class="icon">
-              <i class="fab fa-github"></i>
-            </span>
-            <span>Code</span>
-          </a>
-        </span>
+              <!-- arXiv 页面链接 -->
+              <span class="link-block">
+                <a href="https://arxiv.org/abs/2604.02911" target="_blank"
+                  class="external-link button is-normal is-rounded is-dark">
+                  <span class="icon">
+                    <i class="ai ai-arxiv"></i>
+                  </span>
+                  <span>arXiv</span>
+                </a>
+              </span>
 
-        <!-- TODO: Update with your arXiv paper ID -->
-        <span class="link-block">
-          <a href="https://arxiv.org/abs/<ARXIV PAPER ID>" target="_blank"
-          class="external-link button is-normal is-rounded is-dark">
-          <span class="icon">
-            <i class="ai ai-arxiv"></i>
-          </span>
-          <span>arXiv</span>
-        </a>
-      </span>
+              <!-- DOI 链接 -->
+              <span class="link-block">
+                <a href="https://doi.org/10.48550/arXiv.2604.02911" target="_blank"
+                  class="external-link button is-normal is-rounded is-dark">
+                  <span class="icon">
+                    <i class="fas fa-external-link-alt"></i>
+                  </span>
+                  <span>DOI</span>
+                </a>
+              </span>
+
+              <!-- 代码仓库链接（需要您提供） -->
+              <span class="link-block">
+                <a href="https://github.com/YOUR-USERNAME/DreamTIP" target="_blank"
+                  class="external-link button is-normal is-rounded is-dark">
+                  <span class="icon">
+                    <i class="fab fa-github"></i>
+                  </span>
+                  <span>Code</span>
+                </a>
+              </span>
+            </div>
+          </div>
+        </div>
+      </div>
     </div>
   </div>
-</div>
-</div>
-</div>
-</div>
 </section>
 
 
@@ -358,8 +354,7 @@
         <div class="content has-text-justified">
           <!-- TODO: Replace with your paper abstract -->
           <p>
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin ullamcorper tellus sed ante aliquam tempus. Etiam porttitor urna feugiat nibh elementum, et tempor dolor mattis. Donec accumsan enim augue, a vulputate nisi sodales sit amet. Proin bibendum ex eget mauris cursus euismod nec et nibh. Maecenas ac gravida ante, nec cursus dui. Vivamus purus nibh, placerat ac purus eget, sagittis vestibulum metus. Sed vestibulum bibendum lectus gravida commodo. Pellentesque auctor leo vitae sagittis suscipit.
-          </p>
+          Achieving quadruped robot locomotion across diverse and dynamic terrains presents significant challenges, primarily due to the discrepancies between simulation environments and real-world conditions. Traditional sim-to-real transfer methods often rely on manual feature design or costly real-world fine-tuning. To address these limitations, this paper proposes the DreamTIP framework, which incorporates Task-Invariant Properties learning within the Dreamer world model architecture to enhance sim-to-real transfer capabilities. Guided by large language models, DreamTIP identifies and leverages Task-Invariant Properties, such as contact stability and terrain clearance, which exhibit robustness to dynamic variations and strong transferability across tasks. These properties are integrated into the world model as auxiliary prediction targets, enabling the policy to learn representations that are insensitive to underlying dynamic changes. Furthermore, an efficient adaptation strategy is designed, employing a mixed replay buffer and regularization constraints to rapidly calibrate to real-world dynamics while effectively mitigating representation collapse and catastrophic forgetting. Extensive experiments on complex terrains, including Stair, Climb, Tilt, and Crawl, demonstrate that DreamTIP significantly outperforms state-of-the-art baselines in both simulated and real-world environments. Our method achieves an average performance improvement of 28.1% across eight distinct simulated transfer tasks. In the real-world Climb task, the baseline method achieved only a 10% success rate, whereas our method attained a 100% success rate. These results indicate that incorporating Task-Invariant Properties into Dreamer learning offers a novel solution for achieving robust and transferable robot locomotion.          </p>
         </div>
       </div>
     </div>
